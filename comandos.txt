@@ -1,0 +1,5 @@
+composer require annotations - Routes dentro dos controllers
+composer require twig - Usar twig files
+composer require symfony/asset - Usar arquivos dentro do site
+
+
