@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+    height: 160px;
+}
+
+header h1 {
+    position: relative;
+    top: 20px;
+}
+
+main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    min-height: 60vh;
+}
+
+.titulos {
+    padding: 30px;
+    text-align: center;
+}
+
+.paragrafos {
+    text-align: justify;
+}

@@ -8,15 +8,15 @@ use Symfony\Component\Routing\Annotation\Route;
 
 use App\Entity\Page;
 
-class HomeController extends AbstractController
+class AlunosController extends AbstractController
 {
 
     /** 
-     * @Route("/", name="home_page")
+     * @Route("/alunos", name="alunos_page")
      */
     public function index(): Response
     {
-        $page = new Page('Página Inicial', 'home_page', 'home');
+        $page = new Page('Alunos', 'alunos_page', 'alunos');
 
         return $this->render($page->path_file, [
             'page' => $page,
