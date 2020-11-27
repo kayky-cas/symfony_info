@@ -21,5 +21,6 @@ main {
 }
 
 .paragrafos {
+    padding: 15px;
     text-align: justify;
 }

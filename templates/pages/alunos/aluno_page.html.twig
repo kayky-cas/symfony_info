@@ -1,0 +1,15 @@
+{% extends "base_page.html.twig" %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block content %}
+
+    {{ dump(aluno) }}
+    <div class="row">
+        <h2>{{ aluno.nome }}</h2>
+    </div>
+    <div class="row">
+        <h2>{{ aluno.data }}</h2>
+    </div>
+
+{% endblock %}

@@ -7,22 +7,23 @@
     <table class="table border shadow">
       <thead class="thead-dark">
         <tr>
-          <th scope="col">#</th>
           <th scope="col">Nome</th>
           <th scope="col">Data de Nascimento</th>
-          <th scope="col">Ano</th>
           <th scope="col">Matrícula</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
+      
+      {{ dump(alunos) }}
 
-        </tr>
+      {% for aluno in alunos %}
+          <tr>
+            <td><a href="/alunos/{{ aluno.matricula }}">{{ aluno.nome }}</a></td>
+            <td>{{ aluno.data }}</td>
+            <td>{{ aluno.matricula }}</td>
+          </tr>
+      {% endfor %}
+        
       </tbody>
     </table>
 
